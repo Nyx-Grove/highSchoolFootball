@@ -1,25 +1,124 @@
 <!doctype html>
 <html lang="en">
   <head>
+      <link rel="stylesheet"  href="styles.css">
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
 
     <title>Hello, world!</title>
   </head>
   <body>
+      <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e93330;">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+         <img class="logo" src ="https://uploads-ssl.webflow.com/6057dac172a8dc510667aaf2/60887a296cd41475555b8249_Pic-5.png">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
       <div class="container">
           <div class="row">
               <div class="jumbotron">
-                  <h1>Red Wolves Football Sign Up</h1>
-                  <p> The Red Wolves are intersted in gaining students from ages of 10-13 to recruit for their summer flag football league.</p>
-                  <button type="button" class="btn btn-outline-danger"><a herf="#">Sign Up!</a></button>
+                  <div class="content">
+                    <h1>Red Wolves Football Sign Up</h1>
+                    <p> The Red Wolves are intersted in gaining students from ages of 10-13 to recruit for their summer flag football league.</p>
+                    <button type="button" class="btn btn-outline-danger"><a herf="#">Sign Up!</a></button>
+                </div>
               </div>
           </div>
       </div>
+
+      <div class="container">
+          <div class="row">
+              <div class="col-md-4">
+                  <img src="https://uploads-ssl.webflow.com/6057dac172a8dc510667aaf2/608871c57f3ed9267c557819_Pic-2.png">
+                  <p> Red Wolves football has been around since the inception of the league in 1929 by founder Joseph J. Tomlin as a four-team conference in Northeast Philadelphia. since then, participation has steadily increased to today's record numbers. Over 1,500 youths participated in high school-sanctioned football programs in 2000, and those numbers are continuing to grow.</p>
+              </div>
+              <div class="col-md-4">
+                  <img src="https://uploads-ssl.webflow.com/6057dac172a8dc510667aaf2/608871c59f49d8386f57ff2c_Pic-1.png">
+                  <p><b>SAFETY FIRST</b>
+                Leagues have options with how to structure their program. While leagues can continue the current structure where a player is placed in a division based on his or her age and weight, they may also instead choose to register players based on age only. Currently, an estimated 75-80% of youth football nationally follows an age-only structure.
+                The Red Wolves place value on safety measures that make a difference. That’s why we have also done things in football like reduce contact to 25% of practice time, eliminate kickoffs for our youngest divisions and require that any player who suffers a suspected head injury receive medical clearance from a concussion specialist before returning to play.</p>
+              </div>
+              <div class="col-md-4">
+                  <img src="https://uploads-ssl.webflow.com/6057dac172a8dc510667aaf2/60887367ea7bdc6642bb0105_Pic-4.png">
+                  <p> <b> TRACEBLE STATS</b>
+                    The Red Wolves exists to use football, cheerleading, dance and a respect for education to develop strong, smart, responsible, healthy young men and women. We give them experiences that build their appreciation for and understanding of leadership, teamwork, and discipline. While individual statistics may be more common, particularly among older football players, Pop Warner only recognizes the athletic accomplishments of the team, not the individual. 
+                </p>
+
+              </div>
+            </div>
+        </div>
+
+        <form>
+            <h2>SIGN UP HERE!</h2>
+            <input class="textInput" placeholder="First Name">
+            <input class="textInput" placeholder="Last Name">
+            <br>
+            <h4>Street Adress</h4>
+            <input class="textInput" placeholder="Street">
+            <input class="textInput" placeholder="Unit/Apartment">
+            <input class="textInput" placeholder="city">
+            <input class="textInput" placeholder="State">
+            <input class="textInput" placeholder="Zip code">
+
+            <div class="input-group mb-3">
+                <label class="input-group-text" for="inputGroupSelect01">Options</label>
+                        <select class="form-select" idr="inputGroupSelect01">
+                            <option selected>What position would you like to play?</option>
+                            <option value="1">QB</option>
+                            <option value="2">RB</option>
+                            <option value="4">CB</option>
+                            <option value="5">OL</option>
+                            <option value="6">LB</option>
+                            <option value="7">C</option>
+                            <option value="8">RG</option>
+                            <option value="9">LG</option>
+                            <option value="10">MLB</option>
+                            <option value="11">WR</option>
+                             <option value="12">FB</option>
+                              <option value="12">TE</option>
+                            
+                        </select>
+            </div>
+
+        </form>
+
    
 
     
